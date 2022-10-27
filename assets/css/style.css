@@ -420,9 +420,13 @@ span {
     top: -14px;
 }
 
-#video_carousel .carousel-item video{
+#video_carousel .carousel-item video {
     width: 100%;
     height: 400px;
     object-fit: cover;
     object-position: center;
+}
+
+.line-height-36 {
+    line-height: 36px;
 }
