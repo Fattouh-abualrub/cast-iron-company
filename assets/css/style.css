@@ -194,11 +194,11 @@ button.bg-primary:active:focus .border-primary:hover {
     background: rgba(255, 255, 255, 0.38) !important;
 }
 
-span {
+/* span {
     font-size: 70px;
     position: relative;
     top: -5px;
-}
+} */
 
 .owl-nav button:focus {
     outline: none;
@@ -245,12 +245,12 @@ span {
     top: -7px;
 }
 
-.about-us .item {
+.contact-us .item {
     background-color: #fff;
     box-shadow: 0px 4px 5px rgb(0 0 0 / 30%);
 }
 
-.about-us .item .icon {
+.contact-us .item .icon {
     width: 50px;
     height: 50px;
     background-color: #E71D27;
@@ -429,4 +429,40 @@ span {
 
 .line-height-36 {
     line-height: 36px;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .frame-item {
+        width: 480px
+    }
+
+    .frame-img {
+        width: 525px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .frame-item {
+        width: 90%;
+        padding: 20px;
+        padding-bottom: 50px;
+        margin: auto;
+    }
+
+    .frame-img {
+        width: 100%;
+        position: unset;
+        margin-top: -50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about-us-logo {
+        width: 50%;
+        margin: auto;
+        display: block;
+    }
+    .contact-us .item{
+        margin-bottom: 20px;
+    }
 }
