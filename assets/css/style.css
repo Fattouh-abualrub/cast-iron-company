@@ -462,7 +462,10 @@ button.bg-primary:active:focus .border-primary:hover {
         margin: auto;
         display: block;
     }
-    .contact-us .item{
+
+    .contact-us .col-contact-item {
         margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
