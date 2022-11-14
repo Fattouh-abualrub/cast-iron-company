@@ -224,6 +224,11 @@ button.bg-primary:active:focus .border-primary:hover {
     z-index: 0;
 }
 
+.gallery-list-banner .banner-label::after, 
+.gallery-list-banner .banner-label::before{
+    display: none !important;
+}
+
 .z-index-9 {
     z-index: 9;
 }
@@ -467,5 +472,21 @@ button.bg-primary:active:focus .border-primary:hover {
         margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .banner-label {
+        font-size: 1rem;
+    }
+    .contact-us-left-side{
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 8px;
+    }
+    .contact-us-right-side{
+        padding: 0;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
