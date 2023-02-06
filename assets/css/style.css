@@ -436,6 +436,16 @@ button.bg-primary:active:focus .border-primary:hover {
     line-height: 36px;
 }
 
+.custom-truncate
+{
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+    max-height: 130px;
+}
+
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
     .frame-item {
         width: 480px
@@ -459,6 +469,11 @@ button.bg-primary:active:focus .border-primary:hover {
         position: unset;
         margin-top: -50px;
     }
+
+    .custom-truncate {
+        -webkit-line-clamp: 4;
+        max-height: 103px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -477,7 +492,11 @@ button.bg-primary:active:focus .border-primary:hover {
 
 @media only screen and (max-width: 575px) {
     .banner-label {
-        font-size: 1rem;
+        font-size: 3rem;
+    }
+    .banner-label.gallery-details{
+        font-size: 2rem;
+        font-weight: bold;
     }
     .contact-us-left-side{
         margin-left: 20px;
@@ -488,5 +507,20 @@ button.bg-primary:active:focus .border-primary:hover {
         padding: 0;
         margin-left: 20px;
         margin-right: 20px;
+    }
+    .line-style::after{
+        right: 45%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .frame-item .item-info h4{
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .line-style::after {
+        right: 40%;
     }
 }
